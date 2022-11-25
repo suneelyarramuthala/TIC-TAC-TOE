@@ -170,3 +170,4 @@ nine.addEventListener("click", () => {
     nineimg = 1;
   }
 });
+console.log(eightimg);
