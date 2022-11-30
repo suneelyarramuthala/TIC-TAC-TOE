@@ -258,85 +258,102 @@ nine.addEventListener("click", () => {
   setTimeout(p2, 100);
 });
 function p2() {
-  if (tl == 0 && tm == 0 && tr == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (ml == 0 && mm == 0 && mr == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (bl == 0 && bm == 0 && br == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tl == 0 && ml == 0 && bl == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tm == 0 && mm == 0 && bm == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tr == 0 && mr == 0 && br == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tl == 0 && mm == 0 && br == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tr == 0 && mm == 0 && bl == 0) {
-    alert("player two won!");
-    scoretwo += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tl == 1 && tm == 1 && tr == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (ml == 1 && mm == 1 && mr == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (bl == 1 && bm == 1 && br == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tl == 1 && ml == 1 && bl == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tm == 1 && mm == 1 && bm == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tr == 1 && mr == 1 && br == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tl == 1 && mm == 1 && br == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
-  }
-  if (tr == 1 && mm == 1 && bl == 1) {
-    alert("player one won!");
-    scoreone += 1;
-    setTimeout(resetGame, 1000);
+  if (count < 9) {
+    if (tl == 0 && tm == 0 && tr == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (ml == 0 && mm == 0 && mr == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (bl == 0 && bm == 0 && br == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tl == 0 && ml == 0 && bl == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tm == 0 && mm == 0 && bm == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tr == 0 && mr == 0 && br == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tl == 0 && mm == 0 && br == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tr == 0 && mm == 0 && bl == 0) {
+      alert("player two won!");
+      scoretwo += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tl == 1 && tm == 1 && tr == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (ml == 1 && mm == 1 && mr == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (bl == 1 && bm == 1 && br == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tl == 1 && ml == 1 && bl == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tm == 1 && mm == 1 && bm == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tr == 1 && mr == 1 && br == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tl == 1 && mm == 1 && br == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+    if (tr == 1 && mm == 1 && bl == 1) {
+      alert("player one won!");
+      scoreone += 1;
+      setTimeout(resetGame, 1000);
+    }
+  } else {
+    if (
+      tl !== undefined &&
+      tm !== undefined &&
+      tr !== undefined &&
+      ml !== undefined &&
+      mm !== undefined &&
+      mr !== undefined &&
+      bl !== undefined &&
+      bm !== undefined &&
+      br !== undefined
+    ) {
+      alert("No player won");
+      setTimeout(resetGame, 1000);
+    }
   }
   ones.innerHTML = scoreone;
   twos.innerHTML = scoretwo;
